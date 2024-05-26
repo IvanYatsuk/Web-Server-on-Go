@@ -11,10 +11,10 @@ import (
 )
 
 var (
-	books   map[string]structures.Book = make(map[string]structures.Book) // Хранилище книг в памяти
-	readers map[int]structures.Reader  = make(map[int]structures.Reader)  // Хранилище читателей в памяти
-	mu      sync.Mutex                                                    // Мьютекс для защиты данных от одновременного доступа
-	nextID  int                        = 1                                // Счетчик для генерации ID читателей
+	books   map[string]structures.Book = make(map[string]structures.Book)
+	readers map[int]structures.Reader  = make(map[int]structures.Reader)
+	mu      sync.Mutex
+	nextID  int = 1
 )
 
 // Handlers for books
