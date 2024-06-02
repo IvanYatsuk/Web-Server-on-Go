@@ -1,3 +1,3 @@
 module Web-Server-on-Go
 
-go 1.17
+go 1.22.3
