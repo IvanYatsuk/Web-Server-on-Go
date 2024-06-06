@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine
+FROM golang:1.22.3-alpine
 WORKDIR /Web-Server-on-Go
 COPY go.mod ./
 RUN go mod download
